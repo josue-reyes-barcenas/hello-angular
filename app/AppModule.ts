@@ -27,7 +27,7 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebaseConfig),//tambien no se por que hay dos archivo de appmodule.ts
   ],
   providers: [],
   bootstrap: [AppComponent]
