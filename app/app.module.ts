@@ -28,7 +28,7 @@ import { environment } from '../environments/environment';
   imports: [
     BrowserModule,
     AppRoutingModule
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(environment.firebaseConfig), //aqui es donde me marca el error profe
   ],
   providers: [],
   bootstrap: [AppComponent]
