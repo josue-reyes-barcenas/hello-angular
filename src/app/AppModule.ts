@@ -1,18 +1,17 @@
 import { NgModule } from '@angular/core';
+import { AngularFireModule } from '@angular/fire/compat';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { WorkExperienceComponent } from './work-experience/work-experience.component';
-import { EducationComponent } from './education/education.component';
-import { SkillsComponent } from './skills/skills.component';
 import { CertificatesComponent } from './certificates/certificates.component';
-import { LanguagesComponent } from './languages/languages.component';
+import { EducationComponent } from './education/education.component';
+import { HeaderComponent } from './header/header.component';
 import { InterestsComponent } from './interests/interests.component';
+import { LanguagesComponent } from './languages/languages.component';
+import { SkillsComponent } from './skills/skills.component';
+import { WorkExperienceComponent } from './work-experience/work-experience.component';
 
-import { AngularFireModule } from '@angular/fire/compat';
-import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -27,10 +26,11 @@ import { environment } from '../environments/environment';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
-    AngularFireModule.initializeApp(environment.firebaseConfig), //aqui es donde me marca el error profe
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
