@@ -1,4 +1,4 @@
-export class Workexperience {
+export class WorkExperience {
     id?: string;
     startDate?: string = 'mmm-yyyy';
     endDate?: string = 'mmm-yyyy';
